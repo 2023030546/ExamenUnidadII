@@ -5,7 +5,7 @@ const btnLimpiar  = document.getElementById("Limpiarlista")
 const resultado = document.getElementById("resultado")
 
 function listaAlumnos(){
-    fetch('../js/calificaciones.json')
+    fetch("../js/calificaciones.json")
     .then(respuesta => respuesta.json())
     .then(datos => {
         let tabla = document.getElementById('tabla')
@@ -35,7 +35,7 @@ function listaAlumnos(){
 function calculo() {
 
     const elementoResultado = document.getElementById("resultado")
-    fetch('../js/calificaciones.json')
+    fetch("../js/calificaciones.json")
         .then(respuesta => {
             
             if (!respuesta.ok) {
