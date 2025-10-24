@@ -4,6 +4,7 @@ const enganche = document.getElementById("enganche")
 const pago_inicial = document.getElementById("pagoini")
 const pago_financiar = document.getElementById("total_financiar")
 const pago_mesual = document.getElementById("pago_mensual")
+const calcular = document.getElementById("calcular")
 
 function calculo(){
     const meses = parseInt(planes_credito.value)
@@ -20,3 +21,6 @@ function calculo(){
 
 
 }
+
+calcular.addEventListener("click", calculo)
+

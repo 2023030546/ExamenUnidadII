@@ -18,14 +18,14 @@
             <hr>
             <br>
             <label for="valor_auto">Valor del Automovil</label>
-            <input type="number" name="valor_auto" id="Valorauto" required placeholder="000.00">
+            <input type="number" name="valor_auto" id="valor_auto" required placeholder="000.00">
             <label for="planes_credito">Planes de credito</label>
             <select name="planes_credito" id="planesCredito" required>
-            <option value="1">12 meses</option>
-            <option value="2">18 meses</option>
-            <option value="3">24 meses</option>
-            <option value="4">36 meses</option>
-            <option value="5">48 meses</option>
+            <option value="12">12 meses</option>
+            <option value="18">18 meses</option>
+            <option value="24">24 meses</option>
+            <option value="36">36 meses</option>
+            <option value="48">48 meses</option>
         </select>
         <br>
         <label for="enganche">Enganche</label>
@@ -48,11 +48,14 @@
         <hr>
         <br>
         <center>
-            <button>Calcular</button>
             <button type="reset">Limpiar</button>
         </center>
         
     </form>
+    <center>
+        <button id="calcular">Calcular</button>
+    </center>
+    <script src="../js/Cotizacion.js"></script>
     </section>
 
 
