@@ -11,8 +11,8 @@ function calculo(){
     const enga = parseFloat(enganche.value)
     const valor = parseFloat(valor_auto.value)
 
-    let pagoini = valor - (valor*enga);
-    let pagofina = valor - pagoini;
+    let pagoini = valor*enga;
+    let pagofina = valor - pagoini ;
     let pagomensu = pagofina / meses;
 
     pago_inicial.value = pagoini;
