@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cotizacion</title>
+</head>
+<body>
+
+    <section>
+        <form>
+
+            <center>
+                <h2>Cotizacion</h2>
+            </center>
+            <br>
+            <hr>
+            <br>
+            <label for="valor_auto">Valor del Automovil</label>
+            <input type="number" name="valor_auto" id="Valorauto" required placeholder="000.00">
+            <label for="planes_credito"></label>
+            <select name="planes_credito" id="planesCredito" required>
+            <option value="1">12 meses</option>
+            <option value="2">18 meses</option>
+            <option value="3">24 meses</option>
+            <option value="4">36 meses</option>
+            <option value="5">48 meses</option>
+        </select>
+        <br>
+        <label for="enganche">Enganche</label>
+        <select name="enganche" id="enganche" required>
+            <option value="0.1">10%</option>
+            <option value="0.2">20%</option>
+            <option value="0.35">35%</option>
+            <option value="0.5">50%</option>
+            <option value="0.7">70%</option>
+        </select>
+        <br>
+        <label for="pago_inicial">Pago Inicial</label>
+        <input type="number" name="pago_inicial" id="pagoini" placeholder="000.00" readonly>
+        <label for="total_financiar">Total a financiar</label>
+        <input type="number" name="total_financiar" id="total_financiar" placeholder="000.0" readonly>
+        <label for="pago_mensual">Pago Mensual</label>
+        <input type="number" name="pago_mensual" id="pago_mensual" placeholder="000.0" readonly>
+        <br>
+        <br>
+        <center>
+            <button>Calcular</button>
+            <button type="reset">Limpiar</button>
+        </center>
+    </form>
+    </section>
+
+
+    
+</body>
+</html>
